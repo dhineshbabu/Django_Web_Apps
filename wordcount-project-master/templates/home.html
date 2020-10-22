@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Count</title>
+</head>
+<body>
+    <h1>Word Count - This is from Kanu Hasini's Website</h1>
+    <!-- <h2>{{ HiKanu }}</h2> -->
+    <form action="{% url 'count' %}">
+        <textarea cols="40" rows="5" name="fulltext"></textarea>
+        <br>
+        <input type="submit" value="Count!"/>
+    </form>
+    <br>
+    <a href="{%url 'about'%}">Click Here to know more about this product</a>
+</body>
+</html>
